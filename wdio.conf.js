@@ -1,3 +1,5 @@
+const { renameWdioLog } = require('./helpers/log.helper');
+
 exports.config = {
     //
     // ====================
@@ -60,7 +62,10 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: 'trace',
+    //
+    // Directory to store all test related files like screenshots, videos and logs
+    outputDir: './logs',
     //
     // Set specific log levels per logger
     // loggers:
@@ -309,8 +314,9 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {<Object>} results object containing test results
      */
-    // onComplete: function(exitCode, config, capabilities, results) {
-    // },
+     onComplete: function(exitCode, config, capabilities, results) {
+         renameWdioLog('./logs');
+     },
     /**
     * Gets executed when a refresh happens.
     * @param {string} oldSessionId session ID of the old session

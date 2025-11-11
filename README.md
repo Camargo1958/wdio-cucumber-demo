@@ -40,3 +40,10 @@ c)Incluir 'async' nos funções de cada step
 d)Implementar cada step com as ações necessárias
 
 7 - IA - Prompt: 'configure o Allure Reporter para extrair relatórios de execução dos testes neste projeto'
+
+8 - IA - Prompt: 
+'configure o outputDir em wdio.conf.js para a pasta /logs e use o nome 'log-execucao-dd-MM-aaaa-hh-mm.txt' para gravar os logs de execucao dos testes, onde "dd-MM-aaaa-hh-mm" é a data e horário do log'
+
+9 - IA - Prompt:
+'por favor crie uma pasta /helpers e transfira as linhas usadas para geração de log do arquivo wdio.conf.js criando uma função em 'log.helper.js' e use-a em wdio.conf.io'
+
