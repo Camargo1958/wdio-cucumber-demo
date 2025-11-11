@@ -31,4 +31,5 @@ Then('o usuário deve ser redirecionado para a página inicial', async function 
 Then(/^a mensagem (.*) de confirmação deve ser exibida$/, async function (message) {
     await expect(SecurePage.flashAlert).toBeExisting();
     await expect(SecurePage.flashAlert).toHaveText(expect.stringContaining(message));
+    const screenshot = await browser.takeScreenshot();
 });

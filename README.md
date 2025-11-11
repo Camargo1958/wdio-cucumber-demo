@@ -38,3 +38,5 @@ a)>.\node_modules\.bin\cucumber-js (powershell)
 b)Colar as estruturas dos steps gerados pelo Cucumber no novo steps file
 c)Incluir 'async' nos funções de cada step
 d)Implementar cada step com as ações necessárias
+
+7 - IA - Prompt: 'configure o Allure Reporter para extrair relatórios de execução dos testes neste projeto'
